@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salon Scherenschnitt – Friseur in Musterstadt (Beispielwebsite)</title>
+<meta name="description" content="Beispielwebsite eines fiktiven Friseursalons.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#" class="logo">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="29" r="6" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="29" cy="29" r="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M15 25 L30 4 M25 25 L10 4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+    <span>Salon Scherenschnitt</span>
+  </a>
+  <button class="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="links">
+    <a href="#leistungen">Leistungen</a>
+    <a href="#zeiten">Öffnungszeiten</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#kontakt" class="btn small">Termin anfragen</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Friseur · Musterstadt</p>
+    <h1>Haare mit <em>Haltung.</em></h1>
+    <p class="lead">Moderne Schnitte, ehrliche Beratung und Farbe, die zu dir passt. Im Herzen der Altstadt – mit Espresso und ohne Hektik.</p>
+    <div class="cta">
+      <a href="#kontakt" class="btn">Termin anfragen</a>
+      <a href="#leistungen" class="btn ghost">Preise ansehen</a>
+    </div>
+    <ul class="facts">
+      <li><strong>4,9 ★</strong><span>Kundenbewertung*</span></li>
+      <li><strong>12</strong><span>Jahre Erfahrung*</span></li>
+      <li><strong>3</strong><span>Stylist:innen*</span></li>
+    </ul>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440">
+      <!-- 01 Editorial-Pastell: flach, ohne Konturen, welliger Lob -->
+      <rect width="400" height="440" fill="#fbf1ee"/>
+      <path d="M70 440 V190 A130 130 0 0 1 330 190 V440 Z" fill="#f6cfc0"/>
+      <circle cx="300" cy="96" r="46" fill="#e7a1ae"/>
+      <rect x="40" y="300" width="70" height="70" rx="35" fill="#efd9e6"/>
+      <path d="M330 300 h44 v44 h-44z" fill="#d9c6e6" transform="rotate(12 352 322)"/>
+      <!-- Blätter -->
+      <g fill="#5a3d6e" opacity=".9">
+        <path d="M52 250 C30 230 36 200 60 196 C66 220 66 236 52 250Z"/>
+        <path d="M60 280 C40 274 30 252 44 240 C58 252 64 264 60 280Z" opacity=".6"/>
+      </g>
+      <!-- Haar hinten -->
+      <path d="M140 150 C138 95 175 70 202 70 C232 70 264 95 262 150 C262 190 268 220 274 256 C252 266 232 262 226 252 L176 252 C168 262 148 266 126 256 C132 220 140 190 140 150Z" fill="#3e2427"/>
+      <!-- Hals -->
+      <path d="M182 196 L182 256 Q200 270 218 256 L218 196Z" fill="#b97a55"/>
+      <!-- Oberteil -->
+      <path d="M84 440 C88 330 128 274 180 252 Q200 278 220 252 C272 274 312 330 316 440Z" fill="#c9667a"/>
+      <path d="M180 252 Q200 278 220 252 L214 250 Q200 266 186 250Z" fill="#e7a1ae"/>
+      <path d="M130 440 C134 380 140 350 150 320" stroke="#b25467" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- Gesicht -->
+      <path d="M160 148 C160 106 240 106 240 148 C242 192 220 216 200 216 C180 216 158 192 160 148Z" fill="#d39a73"/>
+      <ellipse cx="174" cy="178" rx="10" ry="6" fill="#e48a7f" opacity=".5"/>
+      <ellipse cx="226" cy="178" rx="10" ry="6" fill="#e48a7f" opacity=".5"/>
+      <g fill="none" stroke="#3e2427" stroke-width="2.6" stroke-linecap="round">
+        <path d="M170 162 Q180 168 190 162"/><path d="M210 162 Q220 168 230 162"/>
+        <path d="M198 168 Q194 182 201 184" stroke-width="1.8" stroke="#9c6243"/>
+      </g>
+      <path d="M187 196 Q200 190 213 196 Q200 206 187 196Z" fill="#a8455a"/>
+      <!-- Haar vorne mit Curtain Bangs -->
+      <path d="M200 86 C168 84 148 108 148 140 C146 170 138 190 132 214 C128 234 136 246 124 256 C140 262 154 256 160 246 C152 230 162 210 160 190 C158 164 164 132 192 114 Z" fill="#5a3336"/>
+      <path d="M200 86 C232 84 254 108 254 140 C256 170 262 190 268 214 C272 234 264 246 276 256 C262 262 248 256 242 246 C250 230 240 210 240 190 C242 164 236 132 208 114 Z" fill="#5a3336"/>
+      <path d="M156 134 C160 96 240 96 244 134 C232 118 214 110 200 112 C186 110 168 118 156 134Z" fill="#5a3336"/>
+      <path d="M172 100 C160 120 156 150 156 176 M226 100 C242 120 246 150 246 180 M252 196 C254 220 262 236 266 248" stroke="#8a5a50" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="240" cy="196" r="4" fill="#f3b9a5"/>
+      <!-- Schere -->
+      <g transform="translate(300 256) rotate(-18)">
+        <path d="M6 -2 L-62 -12 C-66 -12 -66 -7 -61 -6 L6 5 Z" fill="#ffffff"/>
+        <path d="M6 2 L-62 12 C-66 12 -66 7 -61 6 L6 -5 Z" fill="#ece3f1"/>
+        <path d="M4 -3 L18 -12 M4 3 L18 12" stroke="#2b2340" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="27" cy="-15" r="10" fill="none" stroke="#2b2340" stroke-width="6"/>
+        <circle cx="27" cy="15" r="10" fill="none" stroke="#2b2340" stroke-width="6"/>
+        <circle cx="0" cy="0" r="3" fill="#2b2340"/>
+      </g>
+      <!-- fallende Strähnen -->
+      <g fill="none" stroke="#5a3336" stroke-width="3" stroke-linecap="round">
+        <path d="M262 290 c4 5 -2 10 2 15"/><path d="M280 300 c-3 6 3 10 -1 16"/><path d="M250 318 c5 4 0 9 5 13"/><path d="M290 330 c3 4 -1 8 2 11"/>
+      </g>
+      <g fill="#fff"><circle cx="330" cy="230" r="4"/><circle cx="96" cy="140" r="3"/><circle cx="350" cy="160" r="2.5"/></g>
+    </svg>
+  </div>
+</section>
+
+<section id="leistungen" class="section">
+  <h2>Leistungen &amp; Preise</h2>
+  <p class="sub">Alle Preise inkl. Waschen und Föhnen. Langes Haar ggf. mit Aufpreis.</p>
+  <div class="cards">
+    <article class="card">
+      <h3>Damen</h3>
+      <ul class="prices">
+        <li><span>Waschen, Schneiden, Föhnen</span><b>49 €</b></li>
+        <li><span>Spitzen schneiden</span><b>32 €</b></li>
+        <li><span>Hochsteckfrisur</span><b>ab 55 €</b></li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Herren</h3>
+      <ul class="prices">
+        <li><span>Haarschnitt klassisch</span><b>28 €</b></li>
+        <li><span>Fade / Undercut</span><b>32 €</b></li>
+        <li><span>Bart trimmen &amp; Konturen</span><b>15 €</b></li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Farbe</h3>
+      <ul class="prices">
+        <li><span>Ansatzfarbe</span><b>ab 45 €</b></li>
+        <li><span>Balayage</span><b>ab 120 €</b></li>
+        <li><span>Glossing / Pflege</span><b>25 €</b></li>
+      </ul>
+    </article>
+    <article class="card accent">
+      <h3>Kinder &amp; Azubis</h3>
+      <ul class="prices">
+        <li><span>Kinder bis 10 Jahre</span><b>16 €</b></li>
+        <li><span>Schüler, Azubis, Studis</span><b>−15 %</b></li>
+      </ul>
+      <p class="note">Nachweis bitte mitbringen.</p>
+    </article>
+  </div>
+</section>
+
+<section id="zeiten" class="section split">
+  <div>
+    <h2>Öffnungszeiten</h2>
+    <table class="hours">
+      <tr><td>Montag</td><td>geschlossen</td></tr>
+      <tr><td>Dienstag – Freitag</td><td>09:00 – 18:30</td></tr>
+      <tr><td>Donnerstag</td><td>09:00 – 20:00</td></tr>
+      <tr><td>Samstag</td><td>08:30 – 14:00</td></tr>
+      <tr><td>Sonntag</td><td>geschlossen</td></tr>
+    </table>
+    <p class="status" id="status"></p>
+  </div>
+  <div class="quote">
+    <p>„Ein guter Schnitt sieht auch noch nach sechs Wochen gut aus.“</p>
+    <span>– Inhaberin Lena Muster (fiktiv)</span>
+  </div>
+</section>
+
+<section id="kontakt" class="section contact">
+  <h2>Kontakt &amp; Termin</h2>
+  <div class="split">
+    <div class="info">
+      <p><strong>Salon Scherenschnitt</strong><br>Musterstraße 12<br>12345 Musterstadt</p>
+      <p>Telefon: 01234 / 567 890 <small>(Platzhalter)</small><br>E-Mail: hallo@beispiel-salon.de <small>(Platzhalter)</small></p>
+      <div class="map" aria-hidden="true">
+        <svg viewBox="0 0 300 160"><rect width="300" height="160" fill="#efe4ec"/><path d="M0 110 L300 70 M90 0 L130 160 M210 0 L190 160" stroke="#fff" stroke-width="10"/><circle cx="150" cy="88" r="10" fill="#c9667a"/><circle cx="150" cy="88" r="4" fill="#fff"/></svg>
+      </div>
+    </div>
+    <form class="form" onsubmit="event.preventDefault(); this.querySelector('.ok').hidden=false;">
+      <label>Name<input type="text" placeholder="Max Mustermann" required></label>
+      <label>Telefon oder E-Mail<input type="text" placeholder="So erreichen wir dich" required></label>
+      <label>Wunschleistung
+        <select><option>Damenhaarschnitt</option><option>Herrenhaarschnitt</option><option>Farbe</option><option>Beratung</option></select>
+      </label>
+      <label>Nachricht<textarea rows="3" placeholder="Wunschtag, Uhrzeit …"></textarea></label>
+      <button class="btn" type="submit">Anfrage senden</button>
+      <p class="ok" hidden>Demo: Das Formular verschickt nichts.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <p><strong>Beispielwebsite, fiktiver Betrieb.</strong> Alle Namen, Adressen, Preise und Bewertungen (*) sind erfunden.</p>
+  <p><a href="#impressum" onclick="document.getElementById('impressum').hidden=false">Impressum</a> · <a href="#impressum" onclick="document.getElementById('impressum').hidden=false">Datenschutz</a></p>
+  <div id="impressum" hidden class="imp"><p>Impressum: Platzhalter – hier stehen bei einer echten Website die Pflichtangaben nach § 5 DDG (Name, Anschrift, Kontakt, ggf. Registereintrag und USt-IdNr.).</p></div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
