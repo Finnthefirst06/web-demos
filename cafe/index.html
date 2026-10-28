@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café Kleine Bohne – Musterstadt (Beispielwebsite)</title>
+<meta name="description" content="Beispielwebsite eines fiktiven Cafés.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#" class="logo">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="20" rx="12" ry="16" transform="rotate(30 20 20)" fill="currentColor"/><path d="M13 9 Q22 20 27 31" stroke="#f6efe3" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+    <span>Café Kleine Bohne</span>
+  </a>
+  <button class="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="links">
+    <a href="#karte">Speisekarte</a>
+    <a href="#zeiten">Öffnungszeiten</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <span class="badge">Seit 2014 · Rösterei &amp; Café*</span>
+    <h1>Guter Kaffee.<br>Selbst gebacken.<br><span>Gleich um die Ecke.</span></h1>
+    <p class="lead">Frühstück bis 14 Uhr, Kuchen aus der eigenen Backstube und Bohnen, die wir selbst rösten. Komm vorbei – oder nimm dir was mit.</p>
+    <div class="cta">
+      <a href="#karte" class="btn">Zur Speisekarte</a>
+      <a href="#kontakt" class="btn ghost">Tisch reservieren</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 420 400">
+      <defs>
+        <linearGradient id="cup" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f6f62"/><stop offset="1" stop-color="#1f4a42"/></linearGradient>
+        <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f2c46d"/><stop offset="1" stop-color="#e59f4b"/></radialGradient>
+      </defs>
+      <circle cx="230" cy="190" r="170" fill="url(#sun)" opacity=".85"/>
+      <g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".9">
+        <path d="M170 110 q-18 -25 0 -50 q18 -25 0 -50"><animate attributeName="opacity" values=".2;1;.2" dur="3s" repeatCount="indefinite"/></path>
+        <path d="M215 110 q-18 -25 0 -50 q18 -25 0 -50"><animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/></path>
+        <path d="M260 110 q-18 -25 0 -50 q18 -25 0 -50"><animate attributeName="opacity" values=".2;1;.2" dur="3.5s" repeatCount="indefinite"/></path>
+      </g>
+      <ellipse cx="215" cy="330" rx="170" ry="26" fill="#e8dcc6"/>
+      <ellipse cx="215" cy="322" rx="150" ry="20" fill="#f6efe3"/>
+      <path d="M110 135 h210 l-18 150 q-4 30 -34 30 h-106 q-30 0 -34 -30 z" fill="url(#cup)"/>
+      <path d="M320 165 q55 0 52 45 q-3 45 -62 45" fill="none" stroke="#1f4a42" stroke-width="18"/>
+      <ellipse cx="215" cy="135" rx="105" ry="16" fill="#5a3826"/>
+      <ellipse cx="215" cy="133" rx="70" ry="8" fill="#a8714b" opacity=".7"/>
+      <path d="M150 210 h130" stroke="#f2c46d" stroke-width="6" stroke-linecap="round"/>
+      <g transform="translate(60 300) rotate(-20)"><ellipse rx="16" ry="22" fill="#5a3826"/><path d="M-6 -16 Q4 0 -2 18" stroke="#a8714b" stroke-width="3" fill="none"/></g>
+      <g transform="translate(370 300) rotate(25)"><ellipse rx="14" ry="19" fill="#5a3826"/><path d="M-5 -14 Q4 0 -2 15" stroke="#a8714b" stroke-width="3" fill="none"/></g>
+    </svg>
+  </div>
+</section>
+
+<section class="strip">
+  <span>☕ Hausröstung</span><span>🥐 Täglich frisch gebacken</span><span>🌱 Hafermilch ohne Aufpreis</span><span>🐕 Hunde willkommen</span>
+</section>
+
+<section id="karte" class="section">
+  <h2>Speisekarte</h2>
+  <p class="sub">Eine Auswahl – die Tageskuchen stehen an der Tafel.</p>
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-tab="kaffee" role="tab">Kaffee &amp; Co.</button>
+    <button class="tab" data-tab="fruehstueck" role="tab">Frühstück</button>
+    <button class="tab" data-tab="kuchen" role="tab">Kuchen</button>
+  </div>
+  <div class="menu active" id="kaffee">
+    <div class="item"><div><h3>Espresso</h3><p>Hausmischung, kräftig &amp; schokoladig</p></div><b>2,40 €</b></div>
+    <div class="item"><div><h3>Cappuccino</h3><p>Mit Vollmilch oder Hafer</p></div><b>3,60 €</b></div>
+    <div class="item"><div><h3>Flat White</h3><p>Doppelter Espresso, wenig Schaum</p></div><b>4,10 €</b></div>
+    <div class="item"><div><h3>Filterkaffee</h3><p>Wechselnde Single-Origin-Bohne</p></div><b>3,20 €</b></div>
+    <div class="item"><div><h3>Chai Latte</h3><p>Hausgemachter Gewürzsirup</p></div><b>4,20 €</b></div>
+    <div class="item"><div><h3>Heiße Schokolade</h3><p>Mit oder ohne Sahne</p></div><b>3,80 €</b></div>
+  </div>
+  <div class="menu" id="fruehstueck">
+    <div class="item"><div><h3>Kleines Frühstück</h3><p>Brötchen, Butter, Marmelade, Kaffee</p></div><b>6,90 €</b></div>
+    <div class="item"><div><h3>Bohnen-Frühstück</h3><p>Zwei Brötchen, Käse, Aufschnitt, Ei, Obst, Heißgetränk</p></div><b>12,50 €</b></div>
+    <div class="item"><div><h3>Avocado-Brot</h3><p>Sauerteig, Avocado, Feta, Chili</p></div><b>9,80 €</b></div>
+    <div class="item"><div><h3>Porridge</h3><p>Hafer, Zimt, Apfel, Nüsse (vegan)</p></div><b>6,50 €</b></div>
+  </div>
+  <div class="menu" id="kuchen">
+    <div class="item"><div><h3>Käsekuchen</h3><p>Nach Omas Rezept</p></div><b>3,90 €</b></div>
+    <div class="item"><div><h3>Apfelstrudel</h3><p>Warm, mit Vanillesoße</p></div><b>4,50 €</b></div>
+    <div class="item"><div><h3>Zimtschnecke</h3><p>Täglich ab 8 Uhr frisch</p></div><b>3,20 €</b></div>
+    <div class="item"><div><h3>Tageskuchen</h3><p>Fragt uns an der Theke</p></div><b>ab 3,50 €</b></div>
+  </div>
+</section>
+
+<section id="zeiten" class="section split">
+  <div class="hours-card">
+    <h2>Öffnungszeiten</h2>
+    <ul class="hours">
+      <li><span>Mo – Fr</span><span>07:30 – 18:00</span></li>
+      <li><span>Samstag</span><span>08:30 – 18:00</span></li>
+      <li><span>Sonntag</span><span>09:30 – 17:00</span></li>
+      <li><span>Feiertage</span><span>nach Aushang</span></li>
+    </ul>
+    <p class="status" id="status"></p>
+  </div>
+  <div class="event">
+    <h3>Jeden ersten Freitag im Monat</h3>
+    <p>Latte-Art-Abend für alle, die es selbst probieren möchten. Teilnahme 15 € inkl. Getränke (fiktives Angebot).</p>
+  </div>
+</section>
+
+<section id="kontakt" class="section split">
+  <div>
+    <h2>Kontakt</h2>
+    <p><strong>Café Kleine Bohne</strong><br>Beispielweg 7<br>12345 Musterstadt</p>
+    <p>Telefon: 01234 / 112 233 <small>(Platzhalter)</small><br>E-Mail: moin@beispiel-cafe.de <small>(Platzhalter)</small></p>
+    <p>Reservierungen ab 4 Personen bitte telefonisch oder per Formular.</p>
+  </div>
+  <form class="form" onsubmit="event.preventDefault(); this.querySelector('.ok').hidden=false;">
+    <div class="row">
+      <label>Name<input type="text" placeholder="Erika Musterfrau" required></label>
+      <label>Personen<input type="number" min="1" max="20" value="2"></label>
+    </div>
+    <div class="row">
+      <label>Datum<input type="date"></label>
+      <label>Uhrzeit<input type="time" value="10:00"></label>
+    </div>
+    <label>Telefon oder E-Mail<input type="text" placeholder="Für die Bestätigung" required></label>
+    <button class="btn" type="submit">Reservierung anfragen</button>
+    <p class="ok" hidden>Demo: Das Formular verschickt nichts.</p>
+  </form>
+</section>
+</main>
+
+<footer class="footer">
+  <p><strong>Beispielwebsite, fiktiver Betrieb.</strong> Alle Namen, Adressen, Preise und Angaben (*) sind erfunden.</p>
+  <p><a href="#impressum" onclick="document.getElementById('impressum').hidden=false">Impressum</a> · <a href="#impressum" onclick="document.getElementById('impressum').hidden=false">Datenschutz</a></p>
+  <div id="impressum" hidden class="imp"><p>Impressum: Platzhalter – hier stehen bei einer echten Website die Pflichtangaben nach § 5 DDG (Name, Anschrift, Kontakt, ggf. Registereintrag und USt-IdNr.).</p></div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
